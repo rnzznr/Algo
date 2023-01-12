@@ -1,0 +1,27 @@
+variables
+var salaire_base en numerique
+var chiffre_affaire en numerique
+var prime_chiffre_affaire en numerique
+var remboursement_kilometrique en numerique
+var kilometre en numerique
+var salaire_total en numérique
+debut
+
+ecrire "donnez votre salaire de base"
+lire salaire_base
+
+ecrire "donnez le nombre de kilometre" 
+lire kilometre
+
+ecrire "donnez le chiffre_affaire"
+lire chiffre_affaire
+
+remboursement_kilometrique ← kilometre * 0.26
+
+si CA < 50000 alors
+    prime_chiffre_affaire ← chiffre_affaire * 0.02
+sinon 
+    prime_chiffre_affaire ← chiffre_affaire * 0.04
+fin si 
+    salaire_total ← salaire_base + remboursement_kilometrique + prime_chiffre_affaire
+fin
