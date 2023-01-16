@@ -1,0 +1,20 @@
+pas oublier le point virgule
+
+//afficher une pop up sur la page//
+alerte('Hello World !');
+//afficher un message sur le document//
+document.write("Hello World !");
+//afficher un message dans la console//
+console.log("hello world !");
+//afficher un message d'erreur dans la console//
+console.error("hello world !");
+//documentation javascript//
+//https://developer.mozilla.org/fr/docs/Web/JavaScript
+
+
+/*LES VARIABLES*/
+var age = 18;
+//let//depend d'un bloc de code
+let age = 18;
+//typeof//
+document.write(typeof age);

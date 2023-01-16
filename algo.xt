@@ -1,0 +1,187 @@
+Exercice 2 
+tableau voyelles[5] en string
+Debut
+voyelles[0]<- "A"
+voyelles[1]<- "E"
+voyelles[2]<- "I"
+...
+Fin
+Exercice 3
+tableau notes[8] en entier
+variable i en entier
+Debut
+Pour i<- 0 à 8 
+    Ecrire "donnez une note"
+    Lire notes[i]
+i++
+Fin
+Exercice 4
+[0, 1 , 4 , 9 , 16 , 25]
+tableau nombres[5] en entier
+variable i en entier
+Debut
+Pour i<-0 à 5
+    nombres[i] <- i* i 
+    Ecrire nombres[i]
+i++
+Fin
+Exerice 5 
+[1,3,5,7,9,11,13]
+tableau nombres[6] en entier
+variable k en entier                                              
+Debut                                                                           
+nombres[0]<- 1
+ecrire nombres[0]
+Pour k<-1 à 6 
+    nombres[k] <- nombres[k-1] + 2
+    ecrire nombres[k]
+k++
+Fin
+exercice 6 
+[1,1,2,3,5,8,13,21]
+exercice 7 
+tableau notes[8] en entier
+variable i en entier
+variable somme en entier
+Debut
+somme<- 0
+Pour i<- 0 à 8 
+    Ecrire "donnez une note"
+    Lire notes[i]
+    somme <- sommme + notes[i]
+i++
+Ecrire "La moyenne est de " somme/9)
+Fin
+Exercice 8 
+tableau nombres[] en numerique
+variable valeur en entier
+variable i en entier
+variable positif en entier
+variable negatif en entier
+Debut
+ Ecrire "donnez nombre"
+ Lire valeur
+Redim nombres[valeur-1]
+ positif <- 0
+ negatif <- 0
+ Pour (i <- 0 à (valeur-1))                                
+    Ecrire "donnez un nombre"
+    nombres[i]
+    Si nombres[i]> 0 Alors
+        positif ++    
+    Sinon Si nombres[i] < 0
+        negatif<- negatif + 1
+    Fin Si
+i suivant
+Ecrire "Il y a " positif "nombres positifs et " negatif "nombres negatifs et il y a " valeur " nombres dans le tableau"
+Fin
+Exercice 9 
+tableau nombres[] en entier
+variable valeur en entier
+variable i en entier
+variable somme en entier
+Debut
+ Ecrire "donnez nombre"
+ Lire valeur
+Redim nombres[valeur-1]
+somme<- 0
+Pour (i <- 0 à (valeur-1))                                
+        somme <- somme + nombres[i]
+i suivant
+ecrire "la somme est : " somme
+Fin
+Exercice 10 
+tableux tab1[], tab2[], tab3[] en entier
+variable valeur en entier
+variable i en entier
+Debut
+Ecrire "donnez nombre"
+lire valeur 
+redim tab1[valeur-1]
+redim tab2[valeur-1]
+redim tab3[valeur-1]
+Pour i <- 0 à valeur-1
+    tab3[i] <- tab2[i] +tab1[i]
+i++
+Fin
+Exercice 11
+tableaux tab1[], tab2[] en numerique
+variable valeur1 en entier
+variable valeur2 en entier
+variable somme en entier
+variables i, j en entier
+Debut
+Ecrire "donnez un nombre de valeur pour le tableau 1"
+Lire valeur1
+Ecrire "donner un nombre de valeur pour le tableau2"
+Lire valeur2
+redim tab1[valeur1 - 1]                                 
+redim tab2[valeur2 -1]
+somme<- 0
+Pour i<- 0 à valeur1 -1
+    Pour j <- 0 à valeur2- 1
+        somme<- somme + tab1[i] * tab2[i]
+    j++
+i++
+Fin
+Exercice 12
+tableau nombres[] en numerique
+variable valeur en entier
+variable i en entier
+Debut
+ Ecrire "donnez nombre"
+ Lire valeur
+Redim nombres[valeur-1]
+Pour (i <- 0 à (valeur-1))                                
+    Ecrire "donnez un nombre"
+    lire nombres[i]  
+i suivant
+Pour (i <- 0 à (valeur-1))
+    nombres[i] <- nombres[i] + 1
+    Ecrire nombres[i]
+i suivant
+Fin
+Exercice 13 
+tableau nombres[] en numerique
+variable valeur en entier
+variable i en entier
+variable position en entier
+Debut
+ Ecrire "donnez nombre"
+ Lire valeur                                                       
+Redim nombres[valeur-1]
+Pour (i <- 0 à (valeur-1))                                
+    Ecrire "donnez un nombre"
+    lire nombres[i]  
+i suivant
+position<- 0
+Pour (i <- 0 à (valeur-1))
+    Si nombres[i] > nombres[position] Alors
+    position <- i
+    FinSi
+i++
+Ecrire "la plus haute valeur est " nombres[position] "et sa position est:" position
+Fin
+Exercice 14
+variables valeur, somme, moyenne, notesSupMoyenne en numerique
+tableau notes[] en numerique
+Debut
+ecrire "donnez nombre"
+lire valeur
+redim notes[valeur -1]
+Pour i<- 0 à valeur-1
+    Ecrire "donnez une note"
+    Lire notes[i]
+i++
+somme<- 0
+Pour (i <- 0 à (valeur-1))
+    somme<- somme + notes[i]
+i++
+moyenne <- somme / valeur
+notesSupMoyenne <- 0 
+Pour (i <- 0 à (valeur-1))
+    Si notes[i] > moyenne Alors
+    notesSupMoyenne <- notesSupMoyenne + 1
+i suivant
+Ecrire "il y a " notesSupMoyenne "notes supérieures à" moyenne
+Fin
